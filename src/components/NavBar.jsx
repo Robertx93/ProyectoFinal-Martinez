@@ -8,10 +8,10 @@ const NavBar = () => {
         <nav>
             <div><img src={LogoTrans} alt="Logo" className="logo-transparent" /></div>
             <ul>
-                <li><a href="#home">Inicio</a></li>
-                <li><a href="#productos">Productos</a></li>
-                <li><a href="#productos">Tiendas</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#gpu">GPU</a></li>
+                <li><a href="#procesadores">Procesadores</a></li>
+                <li><a href="#memoria">Memoria RAM</a></li>
+                <li><a href="#refrigeracion">Refrigeracion</a></li>
             </ul>
             <CartWidget itemCount={itemCount}/>
         </nav>
