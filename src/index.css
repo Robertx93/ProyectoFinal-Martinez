@@ -21,10 +21,6 @@ nav {
   background-color: #333;
 }
 
-nav .logo {
-  color: white;
-  font-size: 24px;
-}
 
 nav ul {
   list-style-type: none;
@@ -56,6 +52,32 @@ a:hover {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+}
+
+.cart-widget {
+  position: relative;
+}
+
+.cart-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 50px; 
+}
+
+.logo-transparent{
+  width: 150px;
+  height: 150px; 
+}
+
+.item-count {
+  position: absolute;
+  top: 20px; 
+  right: 45px; 
+  background-color: rgb(255, 255, 255);
+  color: rgb(255, 106, 0);
+  border-radius: 50%;
+  padding: 2px 5px;
+  font-size: 12px; 
 }
 
 
