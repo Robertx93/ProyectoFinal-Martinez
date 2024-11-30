@@ -1,6 +1,6 @@
 import React from 'react'
 import cartIcon from '../assets/images/cart-icon.png'
-import '../index.css'
+import '../index.css';
 
 const CartWidget = ({ itemCount }) => {
     return (
