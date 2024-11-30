@@ -1,6 +1,7 @@
 {
+  "homepage": "https://robertx93.github.io/CreaTuLanding1-Martinez/",
   "name": "ramg-tecnology",
-  "private": true,
+  "private": "false",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
