@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react"
 import { useParams } from "react-router"
+import ItemDetail from "./ItemDetail"
 
 function ItemDetailContainer () {
     const [item, setItem] = useState()
@@ -12,11 +13,7 @@ function ItemDetailContainer () {
     }, [id])
 
     return (
-        <div>
-            <img src={item?.images[0]} alt={item?.title} style={{width:300, height:300}} />
-            <h3>{item?.title}</h3>
-            <p>{item?.description}</p>
-        </div>
+        <ItemDetail item={item} />
     )
 }
 
