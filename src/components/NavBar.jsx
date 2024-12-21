@@ -9,10 +9,10 @@ const NavBar = () => {
         <nav>
             <div><Link to='/'><img src={LogoTrans} alt="Logo" className="logo-transparent" /></Link></div>
             <ul>
-                <Link to='category/beauty'>GPU</Link>
-                <Link to='category/fragrances'>Procesadores</Link>
-                <Link to='category/furniture'>Memoria RAM</Link>
-                <Link to='category/Refrigeracion'>Refrigeracion</Link>
+                <Link className='NavBarButtons' to='category/beauty'>Beauty</Link>
+                <Link className='NavBarButtons' to='category/fragrances'>Fragrances</Link>
+                <Link className='NavBarButtons' to='category/furniture'>Furniture</Link>
+                <Link className='NavBarButtons' to='category/groceries'>Groceries</Link>
             </ul>
             <CartWidget itemCount={itemCount}/>
         </nav>

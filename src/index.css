@@ -25,23 +25,32 @@ nav ul {
   list-style-type: none;
 }
 
-nav ul li {
-  display: inline;
-  margin-right: 20px;
+.NavBarButtons {
+  color:#ffffff;
+  padding: 10px;
 }
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-}
-
 .cart-widget {
   color: white;
 }
 
+.btn-detalle{
+    background-color:#333; 
+    color: white; 
+    border: 1px solid #e3922e; 
+    border-radius: 5px; 
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-detalle:hover {
+    background-color: #e3922e;
+    color: black;
+}
+
+
 a {
   font-weight: 500;
-  color: #646cff;
   text-decoration: inherit;
 }
 a:hover {
@@ -83,7 +92,7 @@ h1 {
 .contenedor {
   display: flex;
   flex-wrap: wrap;
-  justify-content:space-between;
+  justify-content: space-around;
   margin: 50px 10px 50px 10px;
 }
 

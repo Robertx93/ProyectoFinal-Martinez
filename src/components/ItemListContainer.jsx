@@ -2,7 +2,9 @@ import React from 'react'
 import {useState, useEffect } from "react"
 import { useParams } from 'react-router'
 import ItemList from './ItemList'
+import { withLoading } from '../hoc/withLoading'
 
+const ItemListWithLoading = withLoading(ItemList)
 
 function ItemListContainer () {
     const [items, setItems] = useState([])
@@ -13,11 +15,14 @@ function ItemListContainer () {
     useEffect(() => {
         fetch(id ? categoryProducts : allProducts)
             .then(res => res.json())
-            .then(res => setItems(res.products))
+            .then(res => {
+                setTimeout(() => {
+                    setItems(res.products)
+                }, 500)
+    })
     }, [id, categoryProducts])
-    
     return (
-        <ItemList items={items} />
+        <ItemListWithLoading items={items} />
     )
 }
 
