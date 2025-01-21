@@ -1,7 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react'
+import { CartContext } from '../context/cartContext'
 
-const ItemCount = ({ stock }) => {
+const ItemCount = ({ item }) => {
     const [count, setCount] = useState(1);
+    const { addToCart } = useContext(CartContext)
+
+    const handleAddToCart = () => {
+        addToCart({...item, qty: count })
+    }
 
     const increment = () => {
         if (count) {
@@ -20,7 +26,7 @@ const ItemCount = ({ stock }) => {
             <button className='btn-detalle' onClick={decrement}>-</button>
             {count} 
             <button className='btn-detalle' onClick={increment}>+</button>
-            <button className='btn-detalle'>Agregar al carrito</button>
+            <button className='btn-detalle' onClick={handleAddToCart}>Agregar al carrito</button>
         </div>
     );
 };

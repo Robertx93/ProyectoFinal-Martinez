@@ -69,7 +69,7 @@ h1 {
 .cart-icon {
   width: 30px;
   height: 30px;
-  margin-right: 50px; 
+  margin-right: 20px; 
 }
 
 .logo-transparent{
@@ -79,11 +79,11 @@ h1 {
 
 .item-count {
   position: absolute;
-  top: 20px; 
-  right: 45px; 
+  top: 5px; 
+  right: 3px; 
   background-color: rgb(255, 255, 255);
   color: rgb(255, 106, 0);
-  border-radius: 50%;
+  border-radius: 20%;
   padding: 2px 5px;
   font-size: 12px; 
 }
@@ -113,6 +113,63 @@ h1 {
 .producto img {
   max-width: 100%;
   height: auto;
+}
+
+.Button-Carrito {
+  border: 1px solid #dddddd23;
+  padding: 6px 15px;
+  border-radius: 10%;
+  background-color:#dddddd23; 
+  color: white; 
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.Button-Carrito:hover{
+  background-color: #dddddd85;
+}
+
+/* CartItem.css */
+.cart-item {
+  display: flex; /* Usamos flexbox para alinear la imagen y los detalles */
+  align-items: center; /* Alinea verticalmente al centro */
+  margin-bottom: 10px; /* Espaciado entre los artículos del carrito */
+  width: 30%; /* Ancho completo del contenedor */
+  justify-content: left;
+  margin-left: 80px;
+}
+
+.cart-item-image-container {
+  display: flex;
+  justify-content: left; /* Centra la imagen horizontalmente */
+  width: 100px; /* Ancho fijo para la imagen (ajusta según sea necesario) */
+  align-items: flex-start;
+}
+
+.cart-item-image {
+  width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.cart-item-details {
+  display: flex;
+  flex-direction: column; /* Coloca los detalles en una columna */
+  justify-content: left; /* Justifica los detalles a la izquierda */
+  margin-left: 15px; /* Espacio entre la imagen y los detalles */
+  align-items:flex-start
+}
+
+/* Línea separadora */
+.cart-item-separator {
+  width: 50%; /* Asegura que ocupe todo el ancho disponible */
+  border-bottom: 1px solid #ccc; /* Línea separadora en la parte inferior */
+  margin-top: 10px; /* Espacio entre los detalles y la línea separadora */
+}
+
+.Cart-Contenedor{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 @media (prefers-color-scheme: light) {

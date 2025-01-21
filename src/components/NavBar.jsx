@@ -14,7 +14,11 @@ const NavBar = () => {
                 <Link className='NavBarButtons' to='category/furniture'>Furniture</Link>
                 <Link className='NavBarButtons' to='category/groceries'>Groceries</Link>
             </ul>
+            <div className='Button-Carrito'>
+            <Link to="/cart">
             <CartWidget itemCount={itemCount}/>
+            </Link>
+            </div>
         </nav>
     );
 };
