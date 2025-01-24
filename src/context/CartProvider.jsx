@@ -5,6 +5,10 @@ function CartProvider ({ children }) {
     const [cart, setCart] = useState([])
 
     const addToCart = (item) => setCart([...cart, item])
+
+    const clearCart = () => {
+        setCart([]); // Vacía el carrito estableciendo el estado a un array vacío
+    };
     
     const getQuantity = () => {
         const quantities = cart.map(item => item.qty)
@@ -20,7 +24,7 @@ function CartProvider ({ children }) {
         return totalCompra
     }
     return (
-        <CartContext.Provider value={{ cart, addToCart, getQuantity, getTotal }}>
+        <CartContext.Provider value={{ cart, addToCart, clearCart, getQuantity, getTotal }}>
             {children}
         </CartContext.Provider>
     )

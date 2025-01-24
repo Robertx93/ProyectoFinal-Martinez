@@ -48,6 +48,23 @@ nav ul {
     color: black;
 }
 
+.btn-detalle2{
+  background-color:#333; 
+  color: white; 
+  border: 1px solid #e3922e; 
+  border-radius: 5px; 
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin: 10px;
+}
+
+.btn-detalle2:hover {
+  background-color: #ff3b22;
+  color: rgb(255, 255, 255);
+  border: 1px solid #ff3b22; 
+}
+
 
 a {
   font-weight: 500;
@@ -129,41 +146,40 @@ h1 {
   background-color: #dddddd85;
 }
 
-/* CartItem.css */
 .cart-item {
-  display: flex; /* Usamos flexbox para alinear la imagen y los detalles */
-  align-items: center; /* Alinea verticalmente al centro */
-  margin-bottom: 10px; /* Espaciado entre los artículos del carrito */
-  width: 30%; /* Ancho completo del contenedor */
+  display: flex; 
+  align-items: center; 
+  margin-bottom: 10px; 
+  width: 30%; 
   justify-content: left;
   margin-left: 80px;
 }
 
 .cart-item-image-container {
   display: flex;
-  justify-content: left; /* Centra la imagen horizontalmente */
-  width: 100px; /* Ancho fijo para la imagen (ajusta según sea necesario) */
+  justify-content: left; 
+  width: 100px; 
   align-items: flex-start;
 }
 
 .cart-item-image {
-  width: 100%; /* La imagen ocupa todo el ancho del contenedor */
-  height: auto; /* Mantiene la proporción de la imagen */
+  width: 100%; 
+  height: auto; 
 }
 
 .cart-item-details {
   display: flex;
-  flex-direction: column; /* Coloca los detalles en una columna */
-  justify-content: left; /* Justifica los detalles a la izquierda */
-  margin-left: 15px; /* Espacio entre la imagen y los detalles */
+  flex-direction: column; 
+  justify-content: left; 
+  margin-left: 15px; 
   align-items:flex-start
 }
 
-/* Línea separadora */
+
 .cart-item-separator {
-  width: 50%; /* Asegura que ocupe todo el ancho disponible */
-  border-bottom: 1px solid #ccc; /* Línea separadora en la parte inferior */
-  margin-top: 10px; /* Espacio entre los detalles y la línea separadora */
+  width: 50%; 
+  border-bottom: 1px solid #ccc; 
+  margin-top: 10px; 
 }
 
 .Cart-Contenedor{
